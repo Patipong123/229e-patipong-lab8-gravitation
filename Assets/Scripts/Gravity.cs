@@ -1,28 +1,27 @@
-using System.Collections.Generic;
+using System.Collections.Generic; //For List
 using UnityEngine;
 
 public class Gravity : MonoBehaviour
 {
     Rigidbody rb;
     const float G = 0.006674f;
-    
-    public static List<Gravity> GravityObjectsList;
+    public static List<Gravity> gravityObjectsList;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
 
-        if (GravityObjectsList == null) 
+        if (gravityObjectsList == null) 
         {
-            GravityObjectsList = new List<Gravity>();
+            gravityObjectsList = new List<Gravity>();
         }
 
-        GravityObjectsList.Add(this);
+        gravityObjectsList.Add(this);
     }
 
     private void FixedUpdate()
     {
-        foreach (Gravity obj in GravityObjectsList)
+        foreach (Gravity obj in gravityObjectsList)
         {
             if (obj != this) 
             {
