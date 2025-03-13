@@ -389,6 +389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid 1
       objectReference: {fileID: 0}
+    - target: {fileID: 151664, guid: fa49e460baf435b4780da7196c2ab473, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 494976, guid: fa49e460baf435b4780da7196c2ab473, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.5
@@ -431,7 +435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5444550, guid: fa49e460baf435b4780da7196c2ab473, type: 3}
       propertyPath: m_Mass
-      value: 500
+      value: 0.0000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -482,6 +486,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106f1ca836b36014dad06e32e972ace8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planet: 0
+  orbitSpeed: 100
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,7 +613,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977952169}
   serializedVersion: 4
-  m_Mass: 6000
+  m_Mass: 4000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -638,6 +644,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106f1ca836b36014dad06e32e972ace8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planet: 0
+  orbitSpeed: 100
 --- !u!1001 &1176349714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -649,6 +657,10 @@ PrefabInstance:
     - target: {fileID: 1288793558353234, guid: 1818e1a170ef94c3aacee2ba50057521, type: 3}
       propertyPath: m_Name
       value: Mars
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288793558353234, guid: 1818e1a170ef94c3aacee2ba50057521, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4387678931267766, guid: 1818e1a170ef94c3aacee2ba50057521, type: 3}
       propertyPath: m_LocalPosition.x
@@ -745,6 +757,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106f1ca836b36014dad06e32e972ace8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planet: 0
+  orbitSpeed: 100
 --- !u!1001 &1195143195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -756,6 +770,10 @@ PrefabInstance:
     - target: {fileID: 141316, guid: 84cc3cd234dfc9d4d9d2e92c0eb0af75, type: 3}
       propertyPath: m_Name
       value: Asteroid 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 141316, guid: 84cc3cd234dfc9d4d9d2e92c0eb0af75, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 446090, guid: 84cc3cd234dfc9d4d9d2e92c0eb0af75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -796,6 +814,10 @@ PrefabInstance:
     - target: {fileID: 446090, guid: 84cc3cd234dfc9d4d9d2e92c0eb0af75, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499024, guid: 84cc3cd234dfc9d4d9d2e92c0eb0af75, type: 3}
+      propertyPath: m_Mass
+      value: 700
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -848,6 +870,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106f1ca836b36014dad06e32e972ace8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planet: 0
+  orbitSpeed: 100
 --- !u!1001 &1320878172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -859,6 +883,10 @@ PrefabInstance:
     - target: {fileID: 1610884164528438, guid: 5d1442ad8c11442988e0eca5d8af73f0, type: 3}
       propertyPath: m_Name
       value: Neptune
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610884164528438, guid: 5d1442ad8c11442988e0eca5d8af73f0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4431810912100570, guid: 5d1442ad8c11442988e0eca5d8af73f0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -924,7 +952,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320878173}
   serializedVersion: 4
-  m_Mass: 4000
+  m_Mass: 5000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -955,6 +983,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106f1ca836b36014dad06e32e972ace8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planet: 0
+  orbitSpeed: 100
 --- !u!1001 &1931270463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -966,6 +996,10 @@ PrefabInstance:
     - target: {fileID: 1408581670749804, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
       propertyPath: m_Name
       value: Moon
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408581670749804, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4693579709242440, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1031,7 +1065,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931270464}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 2000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1062,6 +1096,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106f1ca836b36014dad06e32e972ace8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planet: 0
+  orbitSpeed: 100
 --- !u!1001 &2139437663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1150,7 +1186,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139437664}
   serializedVersion: 4
-  m_Mass: 100000
+  m_Mass: 10000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1181,6 +1217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106f1ca836b36014dad06e32e972ace8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planet: 1
+  orbitSpeed: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
